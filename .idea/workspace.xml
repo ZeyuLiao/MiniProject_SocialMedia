@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="MiniProject_SocialMedia:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b365b2b8-f358-494c-bff5-94fa978f8874" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/controller/CommentsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/controller/LogoutController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/controller/MainPageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/controller/ServletRedirect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/controller/SignUpController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/dao/DatabaseConnector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/dao/PostDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/entity/AccountData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/entity/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/entity/UserSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/filter/LoginCheckFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/111.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Neu_Logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/comment.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mainPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/registrationStatus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/northeastern-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/test.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Jsp File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2LhobHNq5wtsfUMqsy3MW2gV7u9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/ZeyuLiao/IdeaProjects/MiniProject_SocialMedia/src/main/java/neu/edu/dao",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "editor.preferences.import",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ZeyuLiao\IdeaProjects\MiniProject_SocialMedia\src\main\java\neu\edu\dao" />
+      <recent name="C:\Users\ZeyuLiao\IdeaProjects\MiniProject_SocialMedia\src\main\java\neu\edu\entity" />
+      <recent name="C:\Users\ZeyuLiao\IdeaProjects\MiniProject_SocialMedia\src\main\java\neu\edu\controller" />
+      <recent name="C:\Users\ZeyuLiao\IdeaProjects\MiniProject_SocialMedia\src\main\webapp" />
+      <recent name="C:\Users\ZeyuLiao\IdeaProjects\MiniProject_SocialMedia\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ZeyuLiao\IdeaProjects\MiniProject_SocialMedia\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\ZeyuLiao\IdeaProjects\MiniProject_SocialMedia\src\main\webapp" />
+      <recent name="C:\Users\ZeyuLiao\IdeaProjects\MiniProject_SocialMedia\src\main\webapp\css" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="neu.edu.controller" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="run" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.71" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="MiniProject_SocialMedia:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/MiniProject_SocialMedia_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="a6aabeec-49e0-4b9f-8f46-199af95a4b18" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="62148" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="MiniProject_SocialMedia:war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b365b2b8-f358-494c-bff5-94fa978f8874" name="Changes" comment="" />
+      <created>1676332744861</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676332744861</updated>
+      <workItem from="1676332746000" duration="70000" />
+      <workItem from="1676332845337" duration="43000" />
+      <workItem from="1676332966388" duration="713000" />
+      <workItem from="1676333771369" duration="3699000" />
+      <workItem from="1676339869263" duration="15000" />
+      <workItem from="1676343682082" duration="12642000" />
+      <workItem from="1676356379258" duration="5930000" />
+      <workItem from="1676390338102" duration="693000" />
+      <workItem from="1676391083942" duration="5909000" />
+      <workItem from="1676416424907" duration="6648000" />
+      <workItem from="1676425882349" duration="16000" />
+      <workItem from="1676425947487" duration="731000" />
+      <workItem from="1676496434585" duration="2125000" />
+      <workItem from="1676503506894" duration="379000" />
+      <workItem from="1676504253236" duration="18132000" />
+      <workItem from="1676574349056" duration="1929000" />
+      <workItem from="1676579820679" duration="8540000" />
+      <workItem from="1676588565032" duration="619000" />
+      <workItem from="1676689392048" duration="2611000" />
+      <workItem from="1676740436666" duration="724000" />
+      <workItem from="1676742571630" duration="4582000" />
+      <workItem from="1676752778398" duration="1537000" />
+      <workItem from="1676754530020" duration="1441000" />
+      <workItem from="1676758946436" duration="226000" />
+      <workItem from="1676759196908" duration="305000" />
+      <workItem from="1676759542879" duration="1739000" />
+      <workItem from="1676762888221" duration="2140000" />
+      <workItem from="1676769304957" duration="4426000" />
+      <workItem from="1676942631353" duration="1163000" />
+      <workItem from="1676950749995" duration="12850000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
