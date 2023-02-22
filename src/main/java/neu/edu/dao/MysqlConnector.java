@@ -5,10 +5,10 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 
-public class DatabaseConnector {
+public class MysqlConnector {
 
 
-    private static DatabaseConnector instance = null;
+    private static MysqlConnector instance = null;
     private Connection connection;
 
 
@@ -22,7 +22,7 @@ public class DatabaseConnector {
     private static final String PASS = "123";
 
 
-    private DatabaseConnector() {
+    private MysqlConnector() {
         try {
             Class.forName(JDBC_DRIVER);
             String url = DB_URL;
@@ -35,15 +35,15 @@ public class DatabaseConnector {
     }
 
 
-    public static synchronized DatabaseConnector getInstance() {
+    public static synchronized MysqlConnector getInstance() {
 
         if (instance == null) {
-            instance = new DatabaseConnector();
+            instance = new MysqlConnector();
         }
 
         try {
             if (instance.getConnection().isClosed()) {
-                instance = new DatabaseConnector();
+                instance = new MysqlConnector();
 
 
             }

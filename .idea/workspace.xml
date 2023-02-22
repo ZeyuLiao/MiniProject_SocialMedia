@@ -10,38 +10,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b365b2b8-f358-494c-bff5-94fa978f8874" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/controller/CommentsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/controller/LogoutController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/controller/MainPageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/controller/ServletRedirect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/controller/SignUpController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/dao/DatabaseConnector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/dao/PostDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/entity/AccountData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/entity/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/entity/UserSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/filter/LoginCheckFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/111.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Neu_Logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/comment.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mainPage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/registrationStatus.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/stylesheet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/northeastern-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/controller/LikeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/dao/LikeDaoMongoDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/listener/MongoDBContextListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/neu/edu/controller/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/neu/edu/controller/MainPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/neu/edu/controller/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/neu/edu/controller/SignUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/neu/edu/dao/DatabaseConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/neu/edu/dao/MysqlConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/neu/edu/dao/PostDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/neu/edu/dao/PostDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/neu/edu/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/neu/edu/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/neu/edu/filter/LoginCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/neu/edu/filter/LoginCheckFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/111.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/111.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mainPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/registrationStatus.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/registrationStatus.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,29 +75,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/ZeyuLiao/IdeaProjects/MiniProject_SocialMedia/src/main/java/neu/edu/dao",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "editor.preferences.import",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ZeyuLiao/IdeaProjects/MiniProject_SocialMedia/src/main/webapp/WEB-INF&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ZeyuLiao\IdeaProjects\MiniProject_SocialMedia\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\ZeyuLiao\IdeaProjects\MiniProject_SocialMedia\src\main\java\neu\edu\dao" />
       <recent name="C:\Users\ZeyuLiao\IdeaProjects\MiniProject_SocialMedia\src\main\java\neu\edu\entity" />
       <recent name="C:\Users\ZeyuLiao\IdeaProjects\MiniProject_SocialMedia\src\main\java\neu\edu\controller" />
       <recent name="C:\Users\ZeyuLiao\IdeaProjects\MiniProject_SocialMedia\src\main\webapp" />
-      <recent name="C:\Users\ZeyuLiao\IdeaProjects\MiniProject_SocialMedia\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ZeyuLiao\IdeaProjects\MiniProject_SocialMedia\src\main\webapp\WEB-INF" />
@@ -251,6 +235,12 @@
       <workItem from="1676769304957" duration="4426000" />
       <workItem from="1676942631353" duration="1163000" />
       <workItem from="1676950749995" duration="12850000" />
+      <workItem from="1676964307157" duration="10000" />
+      <workItem from="1676993118879" duration="2092000" />
+      <workItem from="1677001393475" duration="677000" />
+      <workItem from="1677020184782" duration="7432000" />
+      <workItem from="1677033695323" duration="8298000" />
+      <workItem from="1677094655703" duration="353000" />
     </task>
     <servers />
   </component>

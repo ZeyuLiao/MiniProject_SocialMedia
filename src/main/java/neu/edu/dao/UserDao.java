@@ -1,15 +1,14 @@
 package neu.edu.dao;
 
 import neu.edu.entity.AccountData;
-import neu.edu.entity.Post;
+
 import java.sql.*;
-import java.util.ArrayList;
 
 public class UserDao {
 
     public boolean register(AccountData ad) throws SQLException {
 
-        Connection conn = DatabaseConnector.getInstance().getConnection();
+        Connection conn = MysqlConnector.getInstance().getConnection();
         String sql = "insert into users(firstName, middleName, lastName, gender, username, password, mobileNumber, email) values(?,?,?,?,?,md5(?),?,?)";
 
        try(PreparedStatement pstmt = conn.prepareStatement(sql)){
@@ -32,7 +31,7 @@ public class UserDao {
     }
 
     public boolean login(String userName, String password) throws SQLException {
-        Connection conn = DatabaseConnector.getInstance().getConnection();
+        Connection conn = MysqlConnector.getInstance().getConnection();
         boolean status = false;
         try {
             PreparedStatement ps = conn.prepareStatement("SELECT * FROM users WHERE username=? AND password=?");

@@ -9,7 +9,7 @@ public class PostDao {
 
     public ArrayList<Post> getAllRootPosts() throws SQLException {
 
-        Connection conn = DatabaseConnector.getInstance().getConnection();
+        Connection conn = MysqlConnector.getInstance().getConnection();
         Statement stmt = conn.createStatement();
         ArrayList<Post> rootPosts = new ArrayList<>();
         String sql = "SELECT * FROM posts WHERE father_id IS NULL";
@@ -32,7 +32,7 @@ public class PostDao {
     }
 
     public ArrayList<Post> getAllChildPosts(String father_id) throws SQLException {
-        Connection conn = DatabaseConnector.getInstance().getConnection();
+        Connection conn = MysqlConnector.getInstance().getConnection();
         ArrayList<Post> commentsPosts = new ArrayList<>();
         String sql = "SELECT * FROM posts WHERE father_id = ?";
         PreparedStatement pstmt = conn.prepareStatement(sql);
@@ -56,7 +56,7 @@ public class PostDao {
     }
 
     public Post getPostById(String id) throws SQLException {
-        Connection conn = DatabaseConnector.getInstance().getConnection();
+        Connection conn = MysqlConnector.getInstance().getConnection();
         String sql = "SELECT * FROM posts WHERE id  = ?";
         PreparedStatement pstmt = conn.prepareStatement(sql);
         pstmt.setString(1, id);
@@ -76,7 +76,7 @@ public class PostDao {
     }
 
     public void addPost(String father_id, String from_name, String to_name, String content) throws SQLException {
-        Connection conn = DatabaseConnector.getInstance().getConnection();
+        Connection conn = MysqlConnector.getInstance().getConnection();
         String sql = "INSERT INTO posts (father_id, from_name, to_name, content) VALUES (?, ?, ?, ?)";
         PreparedStatement pstmt = conn.prepareStatement(sql);
         pstmt.setString(1, father_id);

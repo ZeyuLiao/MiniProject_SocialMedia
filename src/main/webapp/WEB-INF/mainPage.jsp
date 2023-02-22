@@ -1,5 +1,6 @@
 <%@ page import="neu.edu.entity.Post" %>
 <%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.Set" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
 <!DOCTYPE html>
@@ -24,7 +25,7 @@
     ArrayList<Post> posts = (ArrayList<Post>) request.getAttribute("posts");
     String errorType = (String) request.getAttribute("errorType");
     String errorMessage = (String) request.getAttribute("errorMsg");
-    System.out.println(errorMessage);
+    Set<String> likes = (Set<String>) request.getAttribute("likes");
 %>
 <header class="p-1 text-bg-dark sticky-top">
 
@@ -79,7 +80,6 @@
 
 
 <div class="container py-3">
-
     <main class="bg-light rounded shadow p-3 m-3 ">
         <div class="container">
             <div class="row">
@@ -104,8 +104,8 @@
                         <div class="card-footer">
                             <div class="d-flex justify-content-end">
                                 <div class="p-1 me-3">
-                                    <ion-icon>
-                                        <a class='red-bg nav-link' onclick="getButton(this)" style="cursor: pointer;">
+                                    <ion-icon <%if(likes!=null && likes.contains(post.getId())){%> class="active" <%}%>>
+                                        <a class='red-bg nav-link' onclick="getButton(this)" style="cursor: pointer;" data-like-id="<%=post.getId()%>">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
                                                  class="s-ion-icon"
                                                  width="40" height="40">
@@ -162,15 +162,6 @@
 <div class=" modal modal-lg bg-secondary py-5 fade" tabindex="-1" role="dialog" id="modalLogin"
      aria-labelledby="ModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable" role="document">
-        <%
-            if (("loginError").equals(errorType)) {
-        %>
-        <div class="alert alert-danger" role="alert">
-            <%=errorMessage%>
-        </div>
-        <%
-            }
-        %>
         <div class="modal-content rounded-4 shadow">
             <div class="modal-header p-5 pb-4 border-bottom-0">
                 <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
@@ -375,12 +366,22 @@
     document.getElementById("loginButton").click();
     <%} else if("duplicateUser".equals(errorType)) {%>
     document.getElementById("signUpButton").click();
+    <%}else if(("notLogin").equals(errorType)){%>
+    document.getElementById("loginButton").click();
     <%}%>
-
 
     function getButton(button) {
         let icon = button.parentNode;
+        let like_id = button.getAttribute("data-like-id")
         icon.onclick = function () {
+            var url = $(icon).hasClass('active') ? 'like?action=unlike&userName=<%=session.getAttribute("LogInUsername")%>&like_id='+like_id : 'like?action=like&userName=<%=session.getAttribute("LogInUsername")%>&like_id='+like_id;
+            $.post(url, function() {
+                // Request has been sent to the server
+            });
+            <% if(session.getAttribute("LogInUsername") == null){%>
+            document.getElementById("loginButton").click();
+            return;
+            <%}%>
             icon.classList.toggle('active');
         }
     }

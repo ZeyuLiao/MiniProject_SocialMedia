@@ -25,7 +25,7 @@
             padding: 10px;
         }
     </style>
-    <meta http-equiv="refresh" content="5; url=./login">
+    <meta http-equiv="refresh" content="5; url=post">
 </head>
 <body>
 <header class="p-1 text-bg-dark sticky-top">
@@ -42,45 +42,13 @@
                 <li><a href="post" class="nav-link px-2 text-white fs-4">Home</a></li>
             </ul>
 
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 w-25" role="search">
-                <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
-                       aria-label="Search">
-            </form>
-            <%
-            if (session.getAttribute("LogInUsername") == null) {
-
-            %>
-            <div class="text-end">
-                <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal"
-                        data-bs-target="#modalLogin" id="loginButton">Log In
-                </button>
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalSignUp">
-                    Sign Up
-                </button>
-            </div>
-            <%
-            } else {
-            String LogInUsername = (String) session.getAttribute("LogInUsername");
-            %>
-            <div class="d-flex justify-content-center align-items-center">
-                <a href="test.html" class="btn-link me-2 fs-5">
-                    <%
-                    out.append(LogInUsername);
-                    %>
-                </a>
-                <a href="logout" class="nav-link me-2 text-white fs-5">Logout</a>
-            </div>
-            <%
-            }
-            ;
-            %>
         </div>
     </div>
 </header>
 
 <div style="padding:50px">
     <h2 class="success">Registration Successful</h2>
-    <p class="success-simple">(You will be redirected in 10 seconds.)</p>
+    <p class="success-simple">(You will be redirected in 5 seconds.)</p>
 </div>
 
 <footer class="fixed-bottom">

@@ -37,7 +37,8 @@ public class SignUpController extends HttpServlet {
             if(ud.register(ad)){
                 HttpSession session = req.getSession();
                 session.setAttribute("username",ad.getUsername());
-                resp.sendRedirect("/WEB-INF/registrationStatus.jsp");
+                req.getRequestDispatcher("/WEB-INF/registrationStatus.jsp").forward(req,resp);
+                //resp.sendRedirect("/WEB-INF/registrationStatus.jsp");
             }
             else{
                 req.setAttribute("errorType","duplicateUser");
