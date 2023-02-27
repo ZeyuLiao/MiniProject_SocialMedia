@@ -22,7 +22,7 @@ public class LoginCheckFilter extends HttpFilter implements Filter {
 
 
 
-        if(session.getAttribute("LogInUsername") == null) {
+        if(session.getAttribute("loginUsername") == null) {
             req.setAttribute("errorType","notLogin");
             req.setAttribute("errorMsg","You have to login first!");
             req.getRequestDispatcher("post").forward(req, res);

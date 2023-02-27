@@ -26,12 +26,12 @@ public class MainPageController extends HttpServlet {
             throw new RuntimeException(e);
         }
         request.setAttribute("posts", postList);
-        if(request.getSession().getAttribute("LogInUsername") != null){
+        if(request.getSession().getAttribute("loginUsername") != null){
             Set<String> likes;
             ServletContext application = request.getServletContext();
             MongoClient mongoClient = (MongoClient) application.getAttribute("mongodbClient");
             LikeDaoMongoDB likeDao = new LikeDaoMongoDB(mongoClient);
-            likes = likeDao.getAllLikes((String) request.getSession().getAttribute("LogInUsername"));
+            likes = likeDao.getAllLikes((String) request.getSession().getAttribute("loginUsername"));
             request.setAttribute("likes", likes);
         }
         request.getRequestDispatcher("/WEB-INF/mainPage.jsp").forward(request, response);

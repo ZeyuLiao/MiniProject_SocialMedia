@@ -24,7 +24,6 @@ pageEncoding="UTF-8" %>
 ArrayList<Post> posts = (ArrayList<Post>) request.getAttribute("posts");
     String errorType = (String) request.getAttribute("errorType");
     String errorMessage = (String) request.getAttribute("errorMsg");
-    System.out.println(errorMessage);
     %>
     <header class="p-1 text-bg-dark sticky-top">
 
@@ -45,7 +44,7 @@ ArrayList<Post> posts = (ArrayList<Post>) request.getAttribute("posts");
                            aria-label="Search">
                 </form>
                 <%
-                if (session.getAttribute("LogInUsername") == null) {
+                if (session.getAttribute("loginUsername") == null) {
 
                 %>
                 <div class="text-end">
@@ -59,12 +58,12 @@ ArrayList<Post> posts = (ArrayList<Post>) request.getAttribute("posts");
                 </div>
                 <%
                 } else {
-                String LogInUsername = (String) session.getAttribute("LogInUsername");
+                String loginUsername = (String) session.getAttribute("loginUsername");
                 %>
                 <div class="d-flex justify-content-center align-items-center">
-                    <a href="test.html" class="btn-link me-2 fs-5">
+                    <a href="WEB-INF/profile.jsp" class="btn-link me-2 fs-5">
                         <%
-                        out.append(LogInUsername);
+                        out.append(loginUsername);
                         %>
                     </a>
                     <a href="logout" class="nav-link me-2 text-white fs-5">Logout</a>

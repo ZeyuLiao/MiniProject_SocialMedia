@@ -10,22 +10,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b365b2b8-f358-494c-bff5-94fa978f8874" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/controller/LikeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/dao/LikeDaoMongoDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/listener/MongoDBContextListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/controller/DeleteUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/controller/FrontController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/controller/UpdateUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/neu/edu/controller/profileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/neu/edu/controller/CommentsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/neu/edu/controller/CommentsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/neu/edu/controller/LikeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/neu/edu/controller/LikeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/neu/edu/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/neu/edu/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/neu/edu/controller/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/neu/edu/controller/MainPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/neu/edu/controller/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/neu/edu/controller/SignUpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/neu/edu/dao/DatabaseConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/neu/edu/dao/MysqlConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/neu/edu/controller/ServletRedirect.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/neu/edu/dao/PostDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/neu/edu/dao/PostDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/neu/edu/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/neu/edu/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/neu/edu/filter/LoginCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/neu/edu/filter/LoginCheckFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/111.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/111.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/comment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/comment.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mainPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/registrationStatus.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/registrationStatus.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/profile.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +42,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Jsp File" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -240,7 +244,10 @@
       <workItem from="1677001393475" duration="677000" />
       <workItem from="1677020184782" duration="7432000" />
       <workItem from="1677033695323" duration="8298000" />
-      <workItem from="1677094655703" duration="353000" />
+      <workItem from="1677094655703" duration="7897000" />
+      <workItem from="1677127765452" duration="1209000" />
+      <workItem from="1677173044463" duration="637000" />
+      <workItem from="1677427655982" duration="22938000" />
     </task>
     <servers />
   </component>

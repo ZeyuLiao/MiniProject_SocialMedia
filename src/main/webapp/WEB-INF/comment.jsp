@@ -90,7 +90,7 @@
     </div>
     <div class="offcanvas-body small">
         <form class="needs-validation"
-              action="comment?father_id=<%=post.getId()%>&from_name=<%=(String) session.getAttribute("LogInUsername")%>"
+              action="comment?father_id=<%=post.getId()%>&from_name=<%=(String) session.getAttribute("loginUsername")%>"
               id="commentForm" method="post" novalidate>
             <div class="mb-3">
                 <label for="Textarea" class="form-label">Input Your Comment:</label>

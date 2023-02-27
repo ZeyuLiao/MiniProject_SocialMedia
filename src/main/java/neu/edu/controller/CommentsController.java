@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class CommentsController extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws javax.servlet.ServletException, java.io.IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         ArrayList<Post> commentsList;
         try {

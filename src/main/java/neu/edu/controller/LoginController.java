@@ -17,8 +17,8 @@ public class LoginController extends HttpServlet {
         UserDao ud = new UserDao();
         try {
             if(ud.login(request.getParameter("username"),request.getParameter("password"))){
-                request.getSession().setAttribute("LogInUsername",request.getParameter("username"));
-                response.sendRedirect("post");
+                request.getSession().setAttribute("loginUsername",request.getParameter("username"));
+                response.sendRedirect("controller");
             }
             else{
                 request.setAttribute("errorType","loginError");

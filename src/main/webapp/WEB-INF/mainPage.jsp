@@ -41,12 +41,12 @@
                 <li><a href="post" class="nav-link px-2 text-white fs-4">Home</a></li>
             </ul>
 
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 w-25" role="search">
-                <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
-                       aria-label="Search">
-            </form>
+<%--            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 w-25" role="search">--%>
+<%--                <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."--%>
+<%--                       aria-label="Search">--%>
+<%--            </form>--%>
             <%
-                if (session.getAttribute("LogInUsername") == null) {
+                if (session.getAttribute("loginUsername") == null) {
 
             %>
             <div class="text-end">
@@ -60,12 +60,12 @@
             </div>
             <%
             } else {
-                String LogInUsername = (String) session.getAttribute("LogInUsername");
+                String loginUsername = (String) session.getAttribute("loginUsername");
             %>
             <div class="d-flex justify-content-center align-items-center">
-                <a href="test.html" class="btn-link me-2 fs-5">
+                <a href="profile" class="btn-link me-2 fs-5">
                     <%
-                        out.append(LogInUsername);
+                        out.append(loginUsername);
                     %>
                 </a>
                 <a href="logout" class="nav-link me-2 text-white fs-5">Logout</a>
@@ -104,8 +104,10 @@
                         <div class="card-footer">
                             <div class="d-flex justify-content-end">
                                 <div class="p-1 me-3">
-                                    <ion-icon <%if(likes!=null && likes.contains(post.getId())){%> class="active" <%}%>>
-                                        <a class='red-bg nav-link' onclick="getButton(this)" style="cursor: pointer;" data-like-id="<%=post.getId()%>">
+                                    <ion-icon <%if (likes != null && likes.contains(post.getId())) {%>
+                                            class="active" <%}%>>
+                                        <a class='red-bg nav-link' onclick="getButton(this)" style="cursor: pointer;"
+                                           data-like-id="<%=post.getId()%>">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
                                                  class="s-ion-icon"
                                                  width="40" height="40">
@@ -148,8 +150,6 @@
         <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
     </svg>
 </div>
-
-
 <footer class="fixed-bottom">
     <nav class="p-1 text-bg-dark">
         <div class="container-fluid text-end">
@@ -162,6 +162,15 @@
 <div class=" modal modal-lg bg-secondary py-5 fade" tabindex="-1" role="dialog" id="modalLogin"
      aria-labelledby="ModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <%
+            if (("loginError").equals(errorType)) {
+        %>
+        <div class="alert alert-danger" role="alert">
+            <%=errorMessage%>
+        </div>
+        <%
+            }
+        %>
         <div class="modal-content rounded-4 shadow">
             <div class="modal-header p-5 pb-4 border-bottom-0">
                 <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
@@ -298,16 +307,6 @@
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <label for="workNumber" class="form-label">* Work Number</label>
-                        <input type="text" class="form-control" name="workNumber" id="workNumber" pattern="\d{10}"
-                               maxlength="10"
-                               required>
-                        <div class="invalid-feedback">
-                            Please input work number!
-                            (10-digits numbers)
-                        </div>
-                    </div>
-                    <div class="col-md-12">
                         <label for="email" class="form-label">* Email</label>
                         <input type="text" class="form-control" name="email" id="email"
                                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
@@ -374,11 +373,11 @@
         let icon = button.parentNode;
         let like_id = button.getAttribute("data-like-id")
         icon.onclick = function () {
-            var url = $(icon).hasClass('active') ? 'like?action=unlike&userName=<%=session.getAttribute("LogInUsername")%>&like_id='+like_id : 'like?action=like&userName=<%=session.getAttribute("LogInUsername")%>&like_id='+like_id;
-            $.post(url, function() {
+            var url = $(icon).hasClass('active') ? 'like?action=unlike&userName=<%=session.getAttribute("loginUsername")%>&like_id=' + like_id : 'like?action=like&userName=<%=session.getAttribute("loginUsername")%>&like_id=' + like_id;
+            $.post(url, function () {
                 // Request has been sent to the server
             });
-            <% if(session.getAttribute("LogInUsername") == null){%>
+            <% if(session.getAttribute("loginUsername") == null){%>
             document.getElementById("loginButton").click();
             return;
             <%}%>
@@ -420,6 +419,7 @@
             pwd2.setCustomValidity("Invalid field.");
             document.getElementById("doubleCheck").innerHTML = "Mismatch password!";
         } else {
+            pwd1.value = md5(pwd1.value);
             console.log("submit successfully!");
         }
         form.classList.add('was-validated');
@@ -439,6 +439,7 @@
     document.getElementById('loginForm').addEventListener('submit', event => {
         document.getElementById('password').value = md5(document.getElementById('password').value);
     })
+
 
 </script>
 
